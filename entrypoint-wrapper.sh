@@ -25,6 +25,8 @@ SERVER_PID=$!
     rcon-cli execute in game_world run gamerule natural_health_regeneration false
     rcon-cli execute in game_world_nether run gamerule natural_health_regeneration false
     rcon-cli execute in game_world_the_end run gamerule natural_health_regeneration false
+    rcon-cli execute in game_world run gamerule locator_bar true
+    rcon-cli execute in game_world run gamerule players_sleeping_percentage 1
 
     # Mostrar corazones en el Tab
     rcon-cli scoreboard objectives add health health
@@ -38,6 +40,8 @@ SERVER_PID=$!
             rcon-cli execute in game_world run gamerule natural_health_regeneration false > /dev/null 2>&1
             rcon-cli execute in game_world_nether run gamerule natural_health_regeneration false > /dev/null 2>&1
             rcon-cli execute in game_world_the_end run gamerule natural_health_regeneration false > /dev/null 2>&1
+            rcon-cli execute in game_world run gamerule locator_bar true > /dev/null 2>&1
+            rcon-cli execute in game_world run gamerule players_sleeping_percentage 1 > /dev/null 2>&1
             rcon-cli scoreboard objectives add health health > /dev/null 2>&1
             rcon-cli scoreboard objectives setdisplay list health > /dev/null 2>&1
             echo "[init-custom] Config re-aplicada tras reset de WorldReset."
