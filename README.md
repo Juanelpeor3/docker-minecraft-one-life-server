@@ -18,6 +18,11 @@ Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**
 3. Un **entrypoint wrapper** re-aplica automaticamente los gamerules y el scoreboard cada vez que WorldReset genera un mundo nuevo.
 4. En el **Tab** se muestran los corazones de cada jugador conectado.
 
+> **Warning / Aviso:**
+> This repository has been tested and works on Minecraft **26.2**. Future Minecraft updates may change gamerule names, plugin compatibility, or server behavior, which could break this setup. If you run into issues on a newer version, set `VERSION=26.2` in your `.env` file.
+>
+> Este repositorio ha sido probado y funciona en Minecraft **26.2**. Futuras actualizaciones de Minecraft pueden cambiar nombres de gamerules, compatibilidad de plugins o el comportamiento del servidor, lo que podria romper este setup. Si tienes problemas en una version mas nueva, establece `VERSION=26.2` en tu archivo `.env`.
+
 ## Requirements / Requisitos
 
 - [Docker](https://docs.docker.com/get-docker/) & Docker Compose
@@ -38,7 +43,7 @@ Edit the `.env` file with your values / Edita el archivo `.env` con tus valores:
 
 | Variable              | Description / Descripcion                          | Default  |
 |-----------------------|----------------------------------------------------|----------|
-| `VERSION`             | Minecraft version / Version de Minecraft           | `LATEST` |
+| `VERSION`             | Minecraft version / Version de Minecraft           | `26.2` |
 | `RCON_PASSWORD`       | RCON password (required) / Contraseña RCON         | -        |
 | `WHITELIST`           | Allowed players, comma-separated / Jugadores       | -        |
 | `OPS`                 | Server admins / Administradores                    | -        |
@@ -66,6 +71,12 @@ Once in-game, enable death reset as OP / Una vez dentro, activa el reset por mue
 /wr death
 ```
 
+## WorldReset plugin
+
+For commands, configuration and full documentation, see the plugin page / Para comandos, configuracion y documentacion completa, visita la pagina del plugin:
+
+https://modrinth.com/plugin/worldreset
+
 ## Project structure / Estructura del proyecto
 
 ```
@@ -75,8 +86,7 @@ Once in-game, enable death reset as OP / Una vez dentro, activa el reset por mue
 ├── entrypoint-wrapper.sh      # Gamerules, scoreboard & reset watcher
 ├── plugins/
 │   └── WorldReset-1.7.jar     # Plugin that resets the world on death
-├── .env.example               # Environment variables template
-└── .env                       # Your local config (not tracked by git)
+└── .env.example               # Environment variables template
 ```
 
 ## License / Licencia
