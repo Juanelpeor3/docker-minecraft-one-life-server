@@ -19,9 +19,9 @@ Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**
 4. En el **Tab** se muestran los corazones de cada jugador conectado.
 
 > **Warning / Aviso:**
-> This repository has been tested and works on Minecraft **26.2**. Future Minecraft updates may change gamerule names, plugin compatibility, or server behavior, which could break this setup. If you run into issues on a newer version, set `VERSION=26.2` in your `.env` file.
+> This repository has been tested and works on Minecraft **26.2** and **26.3**. Future Minecraft updates may change gamerule names, plugin compatibility, or server behavior, which could break this setup. If you run into issues on a newer version, set `VERSION=26.3` in your `.env` file.
 >
-> Este repositorio ha sido probado y funciona en Minecraft **26.2**. Futuras actualizaciones de Minecraft pueden cambiar nombres de gamerules, compatibilidad de plugins o el comportamiento del servidor, lo que podria romper este setup. Si tienes problemas en una version mas nueva, establece `VERSION=26.2` en tu archivo `.env`.
+> Este repositorio ha sido probado y funciona en Minecraft **26.2** y **26.3**. Futuras actualizaciones de Minecraft pueden cambiar nombres de gamerules, compatibilidad de plugins o el comportamiento del servidor, lo que podria romper este setup. Si tienes problemas en una version mas nueva, establece `VERSION=26.3` en tu archivo `.env`.
 
 ## Requirements / Requisitos
 
@@ -63,12 +63,6 @@ docker compose logs -f
 
 # Stop the server / Detener el servidor
 docker compose down
-```
-
-Once in-game, enable death reset as OP / Una vez dentro, activa el reset por muerte como OP:
-
-```
-/wr death
 ```
 
 ## WorldReset plugin
