@@ -1,6 +1,4 @@
-
-
-# mc-one-life-server
+# docker-minecraft-one-life-server
 
 [Español](README.es.md) | **English**
 
