@@ -1,77 +1,70 @@
+
+
 # mc-one-life-server
+
+[Español](README.es.md) | **English**
 
 Dockerized Minecraft **"One Life"** server. If **any player dies**, the world resets instantly with a new seed thanks to [WorldReset](https://modrinth.com/plugin/worldreset), without restarting the server.
 
-Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**, el mundo se resetea al instante con una nueva seed gracias a [WorldReset](https://modrinth.com/plugin/worldreset), sin necesidad de reiniciar el servidor.
-
-## How it works / Como funciona
+## How it works
 
 1. The server runs in **Hardcore** mode with natural regeneration disabled across all three worlds (overworld, nether, end).
 2. **WorldReset** detects a player death and instantly generates a new world with a random seed.
 3. An **entrypoint wrapper** automatically re-applies gamerules and the scoreboard every time WorldReset generates a new world.
 4. The **Tab** list shows each online player's hearts.
 
----
-
-1. El servidor corre en modo **Hardcore** con regeneracion natural desactivada en los tres mundos (overworld, nether, end).
-2. **WorldReset** detecta la muerte de un jugador y genera un mundo nuevo con una seed aleatoria al instante.
-3. Un **entrypoint wrapper** re-aplica automaticamente los gamerules y el scoreboard cada vez que WorldReset genera un mundo nuevo.
-4. En el **Tab** se muestran los corazones de cada jugador conectado.
-
-> **Warning / Aviso:**
+> **Warning:**
 > This repository has been tested and works on Minecraft **26.2** and **26.3**. Future Minecraft updates may change gamerule names, plugin compatibility, or server behavior, which could break this setup. If you run into issues on a newer version, set `VERSION=26.3` in your `.env` file.
->
-> Este repositorio ha sido probado y funciona en Minecraft **26.2** y **26.3**. Futuras actualizaciones de Minecraft pueden cambiar nombres de gamerules, compatibilidad de plugins o el comportamiento del servidor, lo que podria romper este setup. Si tienes problemas en una version mas nueva, establece `VERSION=26.3` en tu archivo `.env`.
 
-## Requirements / Requisitos
+## Requirements
 
 - [Docker](https://docs.docker.com/get-docker/) & Docker Compose
 
-## Installation / Instalacion
+## Installation
 
 ```bash
 git clone https://github.com/Juanelpeor3/mc-one-life-server.git
 cd mc-one-life-server
 
-# Copy the example and edit your values / Copia el ejemplo y edita tus valores
+# Copy the example and edit your values
 cp .env.example .env
 ```
 
-## Configuration / Configuracion
+## Configuration
 
-Edit the `.env` file with your values / Edita el archivo `.env` con tus valores:
+Edit the `.env` file with your values:
 
-| Variable              | Description / Descripcion                          | Default  |
-|-----------------------|----------------------------------------------------|----------|
-| `VERSION`             | Minecraft version / Version de Minecraft           | `26.2` |
-| `RCON_PASSWORD`       | RCON password (required) / Contraseña RCON         | -        |
-| `WHITELIST`           | Allowed players, comma-separated / Jugadores       | -        |
-| `OPS`                 | Server admins / Administradores                    | -        |
-| `VIEW_DISTANCE`       | Render distance in chunks / Distancia de render    | `16`     |
-| `SIMULATION_DISTANCE` | Simulation distance in chunks / Distancia de sim.  | `10`     |
-| `INIT_MEMORY`         | Initial JVM memory / Memoria inicial JVM           | `4G`     |
-| `MAX_MEMORY`          | Max JVM memory / Memoria maxima JVM                | `6G`     |
+| Variable              | Description                        | Default  |
+|-----------------------|------------------------------------|----------|
+| `VERSION`             | Minecraft version                  | `26.2`   |
+| `RCON_PASSWORD`       | RCON password (required)           | -        |
+| `WHITELIST`           | Allowed players, comma-separated   | -        |
+| `OPS`                 | Server admins                      | -        |
+| `VIEW_DISTANCE`       | Render distance in chunks          | `16`     |
+| `SIMULATION_DISTANCE` | Simulation distance in chunks      | `10`     |
+| `INIT_MEMORY`         | Initial JVM memory                 | `4G`     |
+| `MAX_MEMORY`          | Max JVM memory                     | `6G`     |
 
-## Usage / Uso
+## Usage
 
 ```bash
-# Start the server / Arrancar el servidor
+# Start the server
 docker compose up -d
 
-# Watch logs / Ver logs en tiempo real
+# Watch logs
 docker compose logs -f
 
-# Stop the server / Detener el servidor
+# Stop the server
 docker compose down
 ```
 
 ## WorldReset plugin
 
-For commands, configuration and full documentation, see the plugin page / Para comandos, configuracion y documentacion completa, visita la pagina del plugin:
+For commands, configuration and full documentation, see the plugin page:
 
 https://modrinth.com/plugin/worldreset
 
-## Project structure / Estructura del proyecto
+## Project structure
 
 ```
 .
@@ -83,6 +76,6 @@ https://modrinth.com/plugin/worldreset
 └── .env.example               # Environment variables template
 ```
 
-## License / Licencia
+## License
 
 [MIT](LICENSE)
