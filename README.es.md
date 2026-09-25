@@ -12,8 +12,14 @@ Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**
 3. Un **entrypoint wrapper** re-aplica automaticamente los gamerules y el scoreboard cada vez que WorldReset genera un mundo nuevo.
 4. En el **Tab** se muestran los corazones de cada jugador conectado.
 
-> **Aviso:**
+> **Nota:**
 > Este repositorio ha sido probado y funciona en Minecraft **26.2** y **26.3**. Futuras actualizaciones de Minecraft pueden cambiar nombres de gamerules, compatibilidad de plugins o el comportamiento del servidor, lo que podria romper este setup. Si tienes problemas en una version mas nueva, establece `VERSION=26.3` en tu archivo `.env`.
+
+> **Aviso:** Al establecer `EULA=TRUE` en tu archivo `.env`, estas aceptando el [Acuerdo de Licencia de Usuario Final de Minecraft](https://www.minecraft.net/es-es/eula).
+
+> **Disclaimer:** Este proyecto no esta afiliado, mantenido, autorizado ni respaldado por Mojang Studios, Microsoft, ni ninguna de sus filiales o subsidiarias.
+
+
 
 ## Requisitos
 

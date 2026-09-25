@@ -11,8 +11,12 @@ Dockerized Minecraft **"One Life"** server. If **any player dies**, the world re
 3. An **entrypoint wrapper** automatically re-applies gamerules and the scoreboard every time WorldReset generates a new world.
 4. The **Tab** list shows each online player's hearts.
 
-> **Warning:**
+> **Note:**
 > This repository has been tested and works on Minecraft **26.2** and **26.3**. Future Minecraft updates may change gamerule names, plugin compatibility, or server behavior, which could break this setup. If you run into issues on a newer version, set `VERSION=26.3` in your `.env` file.
+
+> **Warning:** By setting `EULA=TRUE` in your `.env` file, you are accepting the [Minecraft End User License Agreement](https://www.minecraft.net/en-us/eula).
+
+> **Disclaimer:** This project is not affiliated, maintained, authorized, or endorsed by Mojang Studios, Microsoft, or any of their affiliates or subsidiaries.
 
 ## Requirements
 
