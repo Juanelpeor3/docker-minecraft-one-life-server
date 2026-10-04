@@ -1,11 +1,17 @@
-# docker-minecraft-one-life-server
+<div align="center">
 
-**Español** | [English](README.md)
+# Minecraft One Life Server
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Minecraft](https://img.shields.io/badge/Minecraft-62B47A?style=for-the-badge&logoColor=white)
+<br />
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](LICENSE)
+
+**Español** | [English](README.md)
+
+</div>
 
 Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**, el mundo se resetea al instante con una nueva seed gracias a [WorldReset](https://modrinth.com/plugin/worldreset), sin necesidad de reiniciar el servidor.
 
