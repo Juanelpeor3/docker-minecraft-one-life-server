@@ -29,7 +29,7 @@ Servidor de Minecraft **"One Life"** dockerizado. Si **cualquier jugador muere**
 > Al establecer `EULA=TRUE` en tu archivo `.env`, estas aceptando el [Acuerdo de Licencia de Usuario Final de Minecraft](https://www.minecraft.net/es-es/eula).
 
 > [!NOTE]
-> **Disclaimer:** Este proyecto no esta afiliado, mantenido, autorizado ni respaldado por Mojang Studios, Microsoft, ni ninguna de sus filiales o subsidiarias.
+> Este proyecto no esta afiliado, mantenido, autorizado ni respaldado por Mojang Studios, Microsoft, ni ninguna de sus filiales o subsidiarias.
 
 
 

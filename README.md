@@ -29,7 +29,7 @@ Dockerized Minecraft **"One Life"** server. If **any player dies**, the world re
 > By setting `EULA=TRUE` in your `.env` file, you are accepting the [Minecraft End User License Agreement](https://www.minecraft.net/en-us/eula).
 
 > [!NOTE]
-> **Disclaimer:** This project is not affiliated, maintained, authorized, or endorsed by Mojang Studios, Microsoft, or any of their affiliates or subsidiaries.
+> This project is not affiliated, maintained, authorized, or endorsed by Mojang Studios, Microsoft, or any of their affiliates or subsidiaries.
 
 ## Requirements
 
